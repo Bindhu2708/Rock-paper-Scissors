@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papers scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="top">
+    
+            <div class="texth">
+            <h1>ROCK</h1>
+            <h1>PAPER</h1>
+            <h1>SCISSORS</h1>
+            </div>  
+            <div class="score1">
+                <div class="computerscore">
+                    <h3>COMPUTER</h3>
+                    <h3>SCORE</h3>
+                    <p id="cs">0</p>
+                </div>
+                <div class="yourscore">
+                <h3>YOUR</h3>
+                <h3>SCORE</h3>
+                <p id="ys">0</p>
+                </div>
+            </div>    
+            </div>
+            <div class="initial" id="initial">
+                <div class="bottom-left" id="bottom-left">
+                    <div class="scissor" onclick="randomGenerator()">
+                        <img src="images/17911 1.png" alt="">
+                    </div>
+                    <div class="line"></div>
+                    <div class="stone" onclick="randomGenerator1()">
+                        <img src="images/icons8-fist-67 1.png" alt="" id="stone">
+                    </div>
+                    <div class="line1"></div>
+                    <div class="paper" onclick="randomGenerator2()">
+                        <img src="images/icons8-hand-64 1.png" alt="" id="paper">
+                    </div>
+                    <div class="line2"></div>
+                    
+                </div>
+            </div>
+        
+            <div class="result-page">
+            <div class="case1" id="case1">
+                
+                    <div class="left1" id="left1">
+                        <p>YOU PICKED</p>
+                        <img src="images/icons8-hand-64 1.png" alt="">
+                   </div>
+                   <div class="middle1" id="middle1">
+                       <div class="text1">
+                           <h1>YOU WON</h1>
+                           <h4>AGAINST PC</h4>
+                       </div>
+                       <div class="play-again1">
+                        <button onclick="backToHomePage()">
+                           PLAY AGAIN
+                       </button>
+                   </div>
+       
+                   </div>
+       
+                   <div class="right1" id="right1">
+                    <p>PC PICKED</p>
+                       <img src="images/icons8-fist-67 1.png" alt="">
+                   </div>
+               </div>
+               <div class="bottom-right1">
+                <button id="button" onclick="openPopup()">RULES</button>
+                <a href="success.html" id="next">NEXT</a>
+               </div>
+                
+
+           <div class="case2" id="case2">
+            <div class="left2" id="left2">
+                <p>YOU PICKED</p>
+                <img src="images/17911 1.png" alt="">
+           </div>
+           <div class="middle2" id="middle2">
+               <div class="text2">
+                   <h1>YOU WON</h1>
+                   <h4>AGAINST PC</h4>
+               </div>
+               <div class="play-again2">
+                <button onclick="backToHomePage()">
+                   PLAY AGAIN
+               </button>
+           </div>
+
+           </div>
+
+           <div class="right2" id="right2">
+            <p>PC PICKED </p>
+               <img src="images/icons8-hand-64 1.png" alt="">
+           </div>
+       </div>
+
+       <div class="case3" id="case3">
+        <div class="left3" id="left3">
+            <p>YOU PICKED </p>
+            <img src="images/icons8-fist-67 1.png" alt="">
+        </div>
+        <div class="middle3" id="middle3">
+            <div class="text3">
+               <h1>YOU WON</h1>
+               <h4>AGAINST PC</h4>
+            </div>
+            <div class="play-again3">
+                <button onclick="backToHomePage()">
+               PLAY AGAIN
+            </button>
+        </div>
+    </div>
+
+       <div class="right3" id="right3">
+        <p>PC PICKED </p>
+           <img src="images/17911 1.png" alt="">
+       </div>
+   </div>
+
+   <div class="case4">
+    <div class="left4" id="left4">
+        <p>YOU PICKED </p>
+        <img src="images/icons8-fist-67 1.png" alt="">
+   </div>
+   <div class="middle4" id="middle4">
+       <div class="text4">
+           <h1>YOU LOST</h1>
+           <h4>AGAINST PC</h4>
+       </div>
+       <div class="play-again4">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right4" id="right4">
+       <p>PC PICKED </p>
+       <img src="images/icons8-hand-64 1.png" alt="">
+   </div>
+</div>
+
+<div class="case5">
+    <div class="left5" id="left5">
+        <p>YOU PICKED </p>
+        <img src="images/icons8-hand-64 1.png" alt="">
+   </div>
+   <div class="middle5" id="middle5">
+       <div class="text5">
+           <h1>YOU LOST</h1>
+           <h4>AGAINST PC</h4>
+       </div>
+       <div class="play-again5">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right5" id="right5">
+    <p>PC PICKED </p>
+       <img src="images/17911 1.png" alt="">
+   </div>
+</div>
+  
+<div class="case6">
+    <div class="left6" id="left6">
+        <p>YOU PICKED </p>
+        <img src="images/17911 1.png" alt="">
+   </div>
+   <div class="middle6" id="middle6">
+       <div class="text6">
+           <h1>YOU LOST</h1>
+           <h4>AGAINST PC</h4>
+       </div>
+       <div class="play-again6">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right6" id="right6">
+    <p>PC PICKED </p>
+       <img src="images/icons8-fist-67 1.png" alt="">
+   </div>
+</div>
+
+<div class="case7">
+    <div class="left7" id="left7">
+        <p>YOU PICKED</p>
+        <img src="images/17911 1.png" alt="">
+   </div>
+   <div class="middle7" id="middle7">
+       <div class="text7">
+           <h1>TIE UP</h1>
+           
+       </div>
+       <div class="play-again7">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right7" id="right7">
+    <p>PC PICKED</p>
+       <img src="images/17911 1.png" alt="">
+   </div>
+</div> 
+
+<div class="case8">
+    <div class="left8" id="left8">
+        <p>YOU PICKED</p>
+        <img src="images/icons8-fist-67 1.png" alt="">
+   </div>
+   <div class="middle8" id="middle8">
+       <div class="text8">
+           <h1>TIE UP</h1>
+       </div>
+       <div class="play-again8">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right8" id="right8">
+    <p>YOU PICKED</p>
+
+       <img src="images/icons8-fist-67 1.png" alt="">
+   </div>
+</div> 
+
+<div class="case9">
+    <div class="left9" id="left9">
+        <p>YOU PICKED</p>
+        <img src="images/icons8-hand-64 1.png" alt="">
+   </div>
+   <div class="middle9" id="middle9">
+       <div class="text9">
+           <h1>TIE UP</h1>
+       </div>
+       <div class="play-again9">
+        <button onclick="backToHomePage()">
+           PLAY AGAIN
+       </button>
+   </div>
+
+   </div>
+
+   <div class="right9" id="right9">
+    <p>PC PICKED</p>
+       <img src="images/icons8-hand-64 1.png" alt="">
+   </div>
+</div>
+        
+            
+<div class="bottom-right">
+           <button id="button" onclick="openPopup()">RULES</button>
+        </div>
+        
+        <div class="popup" id="popup">
+            <h3>Game rules </h3>
+            <ul>
+                <li><p>Rock beats scissors, scissors beat paper, and paper beats rock.</p></li>
+                <li><p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p></li>
+                <li><p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p></li>
+                <li><p>If both players lay down the same hand, each player lays down another hand</p></li>
+                 `
+                <div class="close">
+                    <img src="images/X (1).png"  onclick="closePopup()" id="close" alt="">
+                </div>
+            </ul>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

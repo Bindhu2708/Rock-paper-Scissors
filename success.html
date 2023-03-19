@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <div class="center-image">
+            <img src="images/Vector.png" alt="" id="cup">
+            <img src="images/Star 6.png" alt="" id="star1">
+            <img src="images/Star 1.png" alt="" id="star2">
+            <img src="images/Star 2.png" alt="" id="star3">
+            <img src="images/Star 9.png" alt="" id="star4">
+            <img src="images/Star 5.png" alt="" id="star5">
+            <img src="images/Star 5.png" alt="" id="star6">
+            <img src="images/Star 5.png" alt="" id="star7">
+            <img src="images/Star 5.png" alt="" id="star8">
+        </div>    
+        <div class="text10">
+            <h1>HURRAY!!</h1>
+            <h3>YOU WON THE GAME</h3>
+        </div>
+        <div class="play-again15">
+            <button  onclick="backToHomePage1()">
+                PLAY AGAIN
+            </button>
+        </div>
+        
+        <div class="bottom-right">
+            <button id="button" onclick="openPopup()">RULES</button>
+         </div>
+         
+         <div class="popup" id="popup">
+             <h3>Game rules </h3>
+             <ul>
+                 <li><p>Rock beats scissors, scissors beat paper, and paper beats rock.</p></li>
+                 <li><p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p></li>
+                 <li><p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p></li>
+                 <li><p>If both players lay down the same hand, each player lays down another hand</p></li>
+                  `
+                 <div class="close">
+                     <img src="images/X (1).png"  onclick="closePopup()" id="close" alt="">
+                 </div>
+             </ul>
+         </div>
+    </div> 
+    <script src="script.js"></script>
+    
+</body>
+</html>
